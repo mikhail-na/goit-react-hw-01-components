@@ -1,10 +1,5 @@
 .statistics{
   display: block;
-        padding: 12px;
-    
-      background-color: #AEC6A5;
-        border-radius: 18px;
-        margin-bottom: 100px;
 
 }
 
@@ -23,10 +18,15 @@
 
 .statList{
     display: flex;
+    
     justify-content: center;
         list-style: none;
         padding: 0;
         margin: 0;
+        background-color: #AEC6A5;
+            border-radius: 18px;
+                margin-bottom: 100px;
+        padding:12px;
 }
 
 .item{
