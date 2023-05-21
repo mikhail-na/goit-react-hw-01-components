@@ -1,5 +1,5 @@
 import css from "./Statistics.module.css";
-import PropTypes from "prop-types"
+import PropTypes, { shape } from "prop-types"
 import getRandomHexColor from "./RandomColor";
 
 
@@ -30,5 +30,10 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.array
+    stats: PropTypes.arrayOf(shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired
+        
+    })).isRequired
 };
